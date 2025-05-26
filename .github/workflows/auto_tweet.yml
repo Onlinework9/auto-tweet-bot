@@ -21,7 +21,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install openai tweepy
+          pip install openai==0.28.0 tweepy
 
       - name: Run Tweet Bot
         env:

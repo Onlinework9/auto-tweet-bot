@@ -1,5 +1,3 @@
-# .github/workflows/auto_tweet.yml
-
 name: Auto Tweet Bot
 
 on:
@@ -27,9 +25,9 @@ jobs:
 
       - name: Run Tweet Bot
         env:
-          OPENAI_API_KEY:    ${{ secrets.OPENAI_API_KEY }}
-          TW_CONSUMER_KEY:   ${{ secrets.TW_CONSUMER_KEY }}
-          TW_CONSUMER_SECRET:${{ secrets.TW_CONSUMER_SECRET }}
-          TW_ACCESS_TOKEN:   ${{ secrets.TW_ACCESS_TOKEN }}
-          TW_ACCESS_SECRET:  ${{ secrets.TW_ACCESS_SECRET }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          TW_CONSUMER_KEY: ${{ secrets.TW_CONSUMER_KEY }}
+          TW_CONSUMER_SECRET: ${{ secrets.TW_CONSUMER_SECRET }}
+          TW_ACCESS_TOKEN: ${{ secrets.TW_ACCESS_TOKEN }}
+          TW_ACCESS_SECRET: ${{ secrets.TW_ACCESS_SECRET }}
         run: python tweet_bot.py
